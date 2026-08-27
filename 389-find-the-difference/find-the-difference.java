@@ -2,16 +2,18 @@ class Solution {
     public char findTheDifference(String s, String t) {
     int sum = 0;
     int sum1 = 0;
+    int m=0;
     for(char c : s.toCharArray())
     {
-       
-        sum += c;
+        int a = c;
+        sum += a;
     }
-    for(char c : t.toCharArray())
+    for(char ch : t.toCharArray())
     {
-       
-        sum1 += c;
+        int b = ch;
+        sum1 += b;
     }
-    return (char) (sum1 - sum);
+    m = sum1 - sum;
+    return (char)m;
     }
 }
